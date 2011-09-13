@@ -1,0 +1,23 @@
+/*
+Copyright (c) 2010-2011 MobilizeToday.com, Mobile Web Solutions Inc.
+
+Support: http://www.mobilizetoday.com/wordpress-themes/mobius/
+
+This file is part of the Mobius WordPress Theme.
+*/
+
+#content input.submit,
+.form-submit #submit {
+	height: 100px;
+}
+#content img {
+	border: 1px solid #fff;
+}
+#footer {
+	font-size: 9px !important;
+}
+input[type=checkbox],
+input[type=radio] {
+	height:auto !important;
+	width:auto !important;
+}

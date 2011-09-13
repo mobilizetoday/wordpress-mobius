@@ -1,0 +1,114 @@
+@charset "utf-8";
+/*
+Copyright (c) 2010-2011 MobilizeToday.com, Mobile Web Solutions Inc.
+
+Support: http://www.mobilizetoday.com/wordpress-themes/mobius/
+
+This file is part of the Mobius WordPress Theme.
+*/
+
+#content p.big {
+	padding-top: 0px;
+}
+.slide-block {
+	width: 290px;
+	margin-top: 10px;
+}
+.slide-block h4 {
+	font-size: 1.4em;
+}
+hr {
+	margin: 0;
+}
+
+#content form fieldset {
+	position: relative;
+}
+#content form ul {
+	margin-top: 0;
+	padding-top: 0;
+	list-style-type: none;
+	list-style-image: url(../images/empty.png);
+}
+#content label.caption {
+	position: absolute !important;
+	display: block;
+}
+#breadcrumbs-carousel {
+	position: relative !important;
+}
+#content .breadcrumbs .link-prev {
+	left: 0;
+}
+#content .breadcrumbs .link-next {
+	left: 0;
+	margin-left: 245px;
+}
+#mobile-navigation ul li ul {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+#content blockquote p {
+	padding-left: 0px !important;
+}
+#content .commentlist p {
+	height: 50px;
+}
+.post ul {
+	margin-left: 2px;
+}
+.post ol {
+ 	margin-left: 8px;
+}
+.commentlist {
+	padding-left: 0 !important;
+	margin-left: 4px !important;
+}
+.commentlist li p {
+}
+.commentlist .comment-body {
+	height: 1%;
+}
+div.mobile-search input {
+	width: 75%;
+}
+.post form input {
+	width: auto !important;
+}
+.post form input.submit {
+	width: 285px !important;
+}
+.post form ul {
+	marin-left: 0;
+	padding-left: 0;
+}
+.search-result h3 {
+	font-size: 0.9em !important;
+}
+.search-result ol {
+	padding-left: 12px !important;
+}
+
+.sm-block {
+	padding: 0;
+}
+.sm-block ul {
+	margin: 0;
+}
+span.comment-time {
+	display: inline !important;
+}
+#content .commentlist li *, #respond h1 {
+	height: 1% !important;
+}
+#content .commentlist div.p {
+	padding-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0;
+	
+}
+#respond ul li {
+	padding-top: 0px;
+	height: 10px;
+}

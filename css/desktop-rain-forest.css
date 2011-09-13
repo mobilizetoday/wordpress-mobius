@@ -1,0 +1,74 @@
+@charset "utf-8";
+/*
+Copyright (c) 2010-2011 MobilizeToday.com, Mobile Web Solutions Inc.
+
+Support: http://www.mobilizetoday.com/wordpress-themes/mobius/
+
+This file is part of the Mobius WordPress Theme.
+*/
+
+/***********************************************************************************************************************
+	Backgrounds
+***********************************************************************************************************************/
+body {
+	background: #000 url(../images/rain-forest/sidebar-background.gif) top left repeat-y;
+}
+#middle {
+	background: url(../images/rain-forest/body-background.jpg) no-repeat;
+}
+.sidebar input, .sidebar textarea {
+	background: #0a2e01;
+}
+.sidebar select {
+	background: #0a2e01;
+}
+.sidebar input.submit {
+	background: #2dca04;
+}
+#content input.submit,
+.form-submit #submit {
+	background: #2dca04;
+}
+#content .commentlist div.comment-author {
+	border-left: 3px solid #36fe00;
+}
+#pagination ul li.active {
+	background: url(../images/rain-forest/pagination-bg.jpg) center center no-repeat;
+	color: #fff;
+}
+#pagination ul li.active a {
+	color: #fff;
+}
+#content .post .transparency, #menu .transparency {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+}
+.slide-block a.open-close {
+	background: url(../images/rain-forest/mobile/heading.png) 0 -27px no-repeat;
+}
+#footer .mobile-optimized {
+	background: url(../images/rain-forest/optimized.jpg) no-repeat;	
+}
+/***********************************************************************************************************************
+	Typography
+***********************************************************************************************************************/
+#content a, #content .breadcrumbs a:hover {
+	color: #35ff00;
+}
+.breadcrumbs span {
+	color: #35ff00;
+}
+#content a:hover {
+	text-decoration: none;
+}
+#content blockquote {
+	padding-left: 60px;
+	background: url(../images/rain-forest/blockquote.png) no-repeat;
+}
+#content .search-result li {
+	color: #35ff00;
+}
+#wp-calendar #today {
+	background: #187400;
+}

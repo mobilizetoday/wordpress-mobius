@@ -1,0 +1,69 @@
+@charset "utf-8";
+/*
+Copyright (c) 2010-2011 MobilizeToday.com, Mobile Web Solutions Inc.
+
+Support: http://www.mobilizetoday.com/wordpress-themes/mobius/
+
+This file is part of the Mobius WordPress Theme.
+*/
+
+/***********************************************************************************************************************
+	Backgrounds
+***********************************************************************************************************************/
+body {
+	background: #000 url(../images/amethyst/sidebar-background.gif) top left repeat-y;
+}
+#middle {
+	background: url(../images/amethyst/body-background.jpg) no-repeat;
+}
+.sidebar input, .sidebar textarea {
+	background: #270c3a;
+}
+.sidebar select {
+	background: #270c3a;
+}
+.sidebar input.submit {
+	background: #a062d5;
+}
+#content input.submit,
+.form-submit #submit {
+	background: #a062d5;
+}
+#content .commentlist div.comment-author {
+	border-left: 3px solid #bc5bff;
+}
+#pagination ul li.active {
+	background: url(../images/amethyst/pagination-bg.jpg) center center no-repeat;
+	color: #fff;
+}
+#pagination ul li.active a {
+	color: #fff;
+}
+.slide-block a.open-close {
+	background: url(../images/amethyst/mobile/heading.png) 0 -27px no-repeat;
+}
+#footer .mobile-optimized {
+	background: url(../images/amethyst/optimized.jpg) no-repeat;	
+}
+/***********************************************************************************************************************
+	Typography
+***********************************************************************************************************************/
+#content a, #content .breadcrumbs a:hover {
+	color: #ba5aff;
+}
+.breadcrumbs span {
+	color: #ba5aff;
+}
+#content a:hover {
+	text-decoration: none;
+}
+#content blockquote {
+	padding-left: 60px;
+	background: url(../images/amethyst/blockquote.png) no-repeat;
+}
+#content .search-result li, #content .search-result li a {
+	color: #ba5aff;
+}
+#wp-calendar #today {
+	background: #ba5aff;
+}

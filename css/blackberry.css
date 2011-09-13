@@ -1,0 +1,47 @@
+/*
+Copyright (c) 2010-2011 MobilizeToday.com, Mobile Web Solutions Inc.
+
+Support: http://www.mobilizetoday.com/wordpress-themes/mobius/
+
+This file is part of the Mobius WordPress Theme.
+*/
+
+.mobile-search form, .mobile-search fieldset, .mobile-search div {
+	width: 100%;
+}
+.mobile-search input {
+	float: left !important;
+}
+.mobile-search input.submit {
+	margin-top: 1px;
+}
+.post-header .post-meta {
+	padding: 0 !important;
+	margin-top: -7px;
+}
+#content .post select {
+	margin:0;
+	padding:10px 0;
+}
+#content .post input[type=checkbox],
+#content .post input[type=radio] {
+	height:auto;
+}
+p cite {
+	display: block;
+	clear: both;
+}
+.fr {
+	clear: both;
+	text-align: right;
+	float: right;
+}
+.widget_tag_cloud {
+	line-height: 25px;
+}
+.gallery {
+	clear: both;
+}
+#pagination li {
+	white-space: nowrap !important;	
+}

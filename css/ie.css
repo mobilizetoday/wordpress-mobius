@@ -1,0 +1,177 @@
+/*
+Copyright (c) 2010-2011 MobilizeToday.com, Mobile Web Solutions Inc.
+
+Support: http://www.mobilizetoday.com/wordpress-themes/mobius/
+
+This file is part of the Mobius WordPress Theme.
+*/
+
+* html #wrapper,
+* html #footer {
+	width: expression((documentElement.clientWidth||document.body.clientWidth)<980?'980px':'');
+}
+*html #content .post .transparency, *html #content #menu .transparency {
+	width: 100%;
+	height: expression(this.parentNode.offsetHeight + 'px');
+}
+
+#content ul {
+	margin-left: 0;
+}
+#content ul li ul, #content ul li ul li ul, #content ul li ul li ul li ul {
+	margin-left: 15px;
+}
+#content ol {
+	margin-left: 5px;
+}
+#content ol li ol, #content ol li ol li ol, #content ol li ol li ol li ol {
+	margin-left: 15px;
+}
+*html form label.caption {
+	padding-top: 15px;
+}
+*html ul.newList {
+	margin-left: -1px !important;
+}
+*html #content span.form-row span {
+	height: 22px;
+}
+*html #content blockquote {
+	width: 100%;
+	padding-left: 0;
+}
+*html #content blockquote p {
+	padding-left: 60px;
+}
+#icons {
+	right: 0;
+}
+
+*html #icons {
+	position: relative;
+	margin-bottom: -20px !important;
+	padding: 20px 0 0 0 !important;
+}
+*html #icons a {
+	margin:0 !imporatnt;
+	padding: 0 !important;
+	height: 70px !important;
+}
+*html #menu {
+	margin-top: -30px !important;
+}
+#menu {
+	width: 728px;
+	padding-left: 0;
+	margin-bottom: -25px !important;
+}
+*html #menu {
+	margin-bottom: 25px !important;	
+}
+*html #nav-main {
+ 	float: left;
+}
+#menu ul li:hover {
+	z-index: 2147483647 !important;
+	border:none;
+}
+
+#menu .show-search { 
+	margin-top: 0px;
+}
+*html #menu .show-search {
+	height: 22px !important;
+}
+#menu ul {
+	padding-left: 0;
+	margin-left: 12px;
+	line-height: 29px;
+	z-index: 1;
+}
+#menu ul li {
+	margin-bottom: 0;
+	padding-top: 6px;
+	padding-bottom: 4px;
+	white-space: nowrap;
+}
+#menu ul li ul {
+	margin-top: 10px;
+	z-index: 2147483647;
+}
+#menu ul li ul li {
+	padding-top: 0;
+	line-height: 22px;
+}
+*html #menu ul li ul {
+	padding-top: 7px;
+}
+*html #menu ul li ul li {
+	height: 22px;
+}
+
+
+
+#menu .show-search {
+	background-position: center center;
+	height: 42px;
+}
+*html #menu .show-search {
+	background-position: top center;
+	height: 42px;
+}
+*html #menu .show-search {
+	float: none;
+	position: absolute;
+	top: 10px;
+}
+
+*html #content .postdata {
+	height: 1%;
+}
+/*#content table caption { border-right: 3px solid #000; border-left: 3px solid #000; }*/
+
+*html .post-header h2 {
+	height: 1%;
+}
+#content p.big {
+	padding-top: 0;
+}
+*html .slide-block .block {
+	height: 1%;
+}
+hr {
+	margin: 4px 0 !important;
+}
+.breadcrumbs {
+	padding-bottom: 7px;
+	margin-bottom: 0 !important;
+}
+*html #content form li {
+	height: 22px;
+}
+#content form li {
+	min-height: 22px;
+}
+#content form li label {
+	padding-top: 0;
+}
+#content form ul.newList {
+	margin-left: -1px !important;
+}
+ol.commentlist {
+	margin-left: 0 !important;
+}
+ol.commentlist li cite  {
+	margin-top: -17px;
+}                
+#wp-calendar tr, #wp-calendar td {
+	margin: 0 !important;
+}
+
+#wp-calendar {
+	border-collapse: collapse;
+}
+#wp-calendar td , #wp-calendar th{
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}

@@ -1,0 +1,245 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mobius 1.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-03 17:27+0200\n"
+"PO-Revision-Date: 2010-06-09 14:35+0200\n"
+"Last-Translator: n/a\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:19
+msgid "Error 404 - Not Found"
+msgstr "Fel 404 – Kunde inte hittas"
+
+#: archive.php:24
+#: index.php:24
+msgid "No Comments &#187;"
+msgstr "Inga Kommentarer"
+
+#: archive.php:24
+#: index.php:24
+msgid "1 Comment &#187;"
+msgstr "1 Kommentar"
+
+#: archive.php:24
+#: index.php:24
+msgid "% Comments &#187;"
+msgstr "% Kommentarer &#187;"
+
+#: archive.php:24
+#: index.php:24
+msgid "Comments Closed"
+msgstr "Kommentarer Avstängda"
+
+#: archive.php:25
+#: index.php:25
+#: page.php:22
+#: single.php:22
+msgid "Posted on"
+msgstr "Postades"
+
+#: archive.php:28
+#: index.php:28
+msgid "Read the rest of this entry &raquo;"
+msgstr "Läs fortsättningen av detta inlägg &raquo;"
+
+#: archive.php:32
+#: index.php:32
+msgid "Written by"
+msgstr "Skrivet av"
+
+#: archive.php:32
+#: index.php:32
+#: single.php:28
+msgid "Tags:"
+msgstr "Etiketter:"
+
+#: archive.php:40
+#: index.php:42
+#: search.php:52
+msgid "Newer Entries &raquo;"
+msgstr "Nyare Inlägg &raquo;"
+
+#: archive.php:40
+#: index.php:42
+#: search.php:52
+msgid "&laquo; Older Entries"
+msgstr "&laquo; Äldre Inlägg"
+
+#: archive.php:49
+#: index.php:52
+msgid "Not Found"
+msgstr "Hittades inte"
+
+#: archive.php:50
+#: index.php:53
+msgid "Sorry, but you are looking for something that isn&#8217;t here."
+msgstr "Tyvärr, men du letar efter någonting som inte finns här"
+
+#: comments.php:15
+msgid "This post is password protected. Enter the password to view comments"
+msgstr "Det här inlägget är lösenords skyddat. Ange lösenordet för att se kommentarer"
+
+#: comments.php:24
+msgid "No Responses"
+msgstr "Inga Svar"
+
+#: comments.php:24
+msgid "One Response"
+msgstr "Ett Svar"
+
+#: comments.php:24
+msgid "% Responses"
+msgstr "% Svar"
+
+#: comments.php:45
+msgid "Comments are closed"
+msgstr "Kommentarer är avstängda"
+
+#: comments.php:55
+msgid "Leave a Reply"
+msgstr "Lämna ett Svar"
+
+#: comments.php:55
+#, php-format
+msgid "Leave a Reply for %s"
+msgstr "Lämna ett Svar till %s"
+
+#: comments.php:55
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Du måste vara <a href=\"%s\">inloggad</a> för att lämna en kommentar."
+
+#: comments.php:62
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>."
+msgstr "Inloggad som <a href=\"%1$s\">%2$s</a>"
+
+#: comments.php:62
+msgid "Log out of this account"
+msgstr "Logga ut från detta konto"
+
+#: comments.php:62
+msgid "Log out &raquo;"
+msgstr "Logga ut &raquo;"
+
+#: comments.php:66
+msgid "Name"
+msgstr "Namn"
+
+#: comments.php:68
+msgid "E-mail"
+msgstr "E-post"
+
+#: comments.php:70
+msgid "Website"
+msgstr "Hemsida"
+
+#: comments.php:74
+msgid "Comment"
+msgstr "Kommentar"
+
+#: footer.php:22
+msgid "SEARCH"
+msgstr "SÖK"
+
+#: footer.php:42
+msgid "This page is optimized for mobile phones"
+msgstr "Den här sidan är optimerad för mobiltelefoner"
+
+#: footer.php:42
+msgid "Optimized for mobile devices"
+msgstr "Optimerad för mobila enheter"
+
+#: footer.php:43
+msgid "Powered By"
+msgstr "Drivs med"
+
+#: footer.php:44
+msgid "Design &amp; development by"
+msgstr "Designad och utvecklad av"
+
+#: functions.php:248
+msgid "Your comment is awaiting moderation."
+msgstr "Din kommentar väntar på godkännande"
+
+#: header.php:104
+msgid "Skip To Navigation"
+msgstr "Gå Till Menyn"
+
+#: header.php:120
+msgid "Search..."
+msgstr "Sök..."
+
+#: page.php:25
+#: single.php:25
+msgid "Read the rest of this page &raquo;"
+msgstr "Fortsätt läsa mer &raquo;"
+
+#: search.php:34
+msgid "Search Results"
+msgstr "Sökresultat"
+
+#: search.php:39
+#, php-format
+msgid "Permanent Link to %s"
+msgstr "Permanent länk till %s"
+
+#: search.php:61
+msgid "No posts found. Try a different search?"
+msgstr "Inga inlägg hittades. Prova en annan sökning?"
+
+#: sidebar.php:18
+msgid "Pages"
+msgstr "Sidor"
+
+#: sidebar.php:19
+#: sidebar.php:37
+#: sidebar.php:54
+#: sidebar.php:71
+#: sidebar.php:93
+msgid "Close block"
+msgstr "Stäng block"
+
+#: sidebar.php:36
+msgid "Categories"
+msgstr "Kategorier"
+
+#: sidebar.php:53
+msgid "Archives"
+msgstr "Arkiv"
+
+#: sidebar.php:70
+msgid "Meta"
+msgstr "Meta"
+
+#: sidebar.php:92
+msgid "Blogroll"
+msgstr "Blogglista"
+
+#: single.php:29
+msgid "Categories:"
+msgstr "Kategorier:"
+
+#: single.php:30
+msgid "Edit this entry"
+msgstr "Redigera inlägget"
+
+#: single.php:32
+msgid "<p><strong>Pages:</strong>"
+msgstr "<p><strong>Sidor:</strong>"
+
+#: single.php:44
+msgid "Next post &raquo;"
+msgstr "Nästa inlägg &raquo;"
+
+#: single.php:44
+msgid "&laquo; Previous post"
+msgstr "&laquo; Föregående inlägg"
+
