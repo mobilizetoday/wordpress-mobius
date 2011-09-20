@@ -76,7 +76,7 @@ function mobius_password_form($form) {
 		'#</label>#' => '',
 		'#<p>This post is password protected. To view it please enter your password below:#' => '<p>This post is password protected. To view it please enter your password below:</p><ul>',
 		'#<input(.*?)type="password"(.*?) />#' => '<li><label class="caption">Password</label><span class="form-row row-first"> <input$1type="password" /></span></li>',
-		'#<input type="submit" name="Submit" value="Submit" />#' => '<li><input type="submit" value="Submit" class="submit" /></li>',
+		'#<input type="submit" name="Submit" value="Submit" />#' => '<li class="password-button"><input type="submit" value="Submit" class="submit" /></li>',
 		'#</form(.*?)>#' => '</fieldset></form><div class="clear"></div>'
 	);
 	echo preg_replace(array_keys($subs), array_values($subs), $form);

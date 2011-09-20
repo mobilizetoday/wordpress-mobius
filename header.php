@@ -26,7 +26,7 @@ This file is part of the Mobius WordPress Theme.
 ?>
 	<script type="text/javascript">
 	// <![CDATA[
-	if (screen.width > 640 && window.location.search.substring(1) != "mobile")
+	if (screen.width > 640 && window.location.search.substring(1) != "mobile" && !navigator.userAgent.match(/Android/i))
 	{
 		//desktop version
 		document.write('<link rel="stylesheet" href="<?php echo get_stylesheet_uri() ?>" type="text/css" media="screen,tv,projection" />');

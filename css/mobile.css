@@ -33,6 +33,7 @@ blockquote, q {
 :focus {
 	outline: 0;
 }
+img.wp-smiley {border: none !important;}
 ins {
 	text-decoration: none;
 }
@@ -837,4 +838,8 @@ img {
 } 
 #content .commentlist ul, #content .commentlist ul ul, #content .commentlist ul ul ul, #content .commentlist ul ul ul ul, #content .commentlist ul ul ul ul ul {
 	padding-top: 8px;
+}
+
+li.password-button {
+	padding-bottom: 5px;
 }
