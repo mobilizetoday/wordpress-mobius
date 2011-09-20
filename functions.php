@@ -101,7 +101,7 @@ function theme_custom_menu($menu_id = 'nav-main-top') {
 	$menu_name = 'main';
 
 	$locations = get_nav_menu_locations();
-	$menu_term = wp_get_nav_menu_object( $locations[$menu_name] );
+	$menu_term = isset($locations[$menu_name]) ? wp_get_nav_menu_object( $locations[$menu_name] ) : null;
 	if (isset($menu_term->term_id)) {
 		$menu_items = wp_get_nav_menu_items($menu_term->term_id);
 

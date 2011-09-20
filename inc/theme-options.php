@@ -46,7 +46,7 @@ function mobius_theme_options_add_page() {
 		'<p>' . __( 'Remember to click "Save Changes" to save any changes you have made to the theme options.', 'mobius' ) . '</p>' .
 		'<p><strong>' . __( 'For more information:', 'mobius' ) . '</strong></p>' .
 		'<p>' . __( '<a href="http://codex.wordpress.org/Appearance_Theme_Options_Screen" target="_blank">Documentation on Theme Options</a>', 'mobius' ) . '</p>' .
-		'<p>' . __( '<a href="http:/www.mobilizetoday.com/" target="_blank">MobilizeToday.com</a>', 'mobus' ) . '</p>';
+		'<p>' . __( '<a href="http://www.mobilizetoday.com/" target="_blank">MobilizeToday.com</a>', 'mobus' ) . '</p>';
 
 	add_contextual_help( $theme_page, $help );
 }
@@ -119,8 +119,7 @@ function mobius_theme_options_render_page() {
 			<table width="100%" border="0" style="padding:5px 10px;">
 				<tr>
 					<td>
-						<p style="margin:0;padding: 0 0 18px 0;">If you like this theme and want it to be even better as well as to see new FREE mobile compatible themes from MobilizeToday.com, you are welcome to donate.</p>
-						<p style="margin:0;padding: 0 0 18px 0;"><a href="http://www.mobilizetoday.com/" target="_blank" title="Make your existing website mobile with MobilizeToday!" style="display:block;width: 650px;height: 80px;background: url(http://www.mobilizetoday.com/images/banners/optimize-website-650.jpg) no-repeat;text-indent: -7777px;overflow: hidden;">Make your existing website mobile with MobilizeToday</a></p>
+						<p style="margin:0;padding: 0 0 18px 0; font-size: 14px;">If you like this theme and want it to be even better as well as to see new FREE mobile compatible themes from <a href="http://www.mobilizetoday.com/"  target="_blank" title="Make your existing website mobile with MobilizeToday!">MobilizeToday.com</a>, you are welcome to donate.</p>
 					</td>
 					<td style="vertical-align:top;">
 						<form method="post" action="https://www.paypal.com/cgi-bin/webscr">
@@ -252,9 +251,9 @@ function mobius_theme_options_validate( $input ) {
 	if ( isset( $input['mobile_layout'] ) && array_key_exists( $input['mobile_layout'], mobius_mobile_layouts() ) )
 		$output['mobile_layout'] = $input['mobile_layout'];
 
-	$output['show_rss'] = (bool) $input['show_rss'];
-	$output['show_twitter'] = (bool) $input['show_twitter'];
-	$output['show_facebook'] = (bool) $input['show_facebook'];
+	$output['show_rss'] = isset($input['show_rss']) ? true : false;
+	$output['show_twitter'] = isset($input['show_twitter']) ? true : false;
+	$output['show_facebook'] = isset($input['show_facebook']) ? true : false;
 
 	$output['facebook_url'] = $input['facebook_url'];
 	$output['twitter_url'] = $input['twitter_url'];
