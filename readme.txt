@@ -3,7 +3,7 @@ Contributors: antony-swans
 Tags: black, blue, green, purple, dark, two-columns, fixed-width, left-sidebar, theme-options, translation-ready
 Requires at least: 3.1
 Tested up to: 3.2.1
-Stable tag: 1.7
+Stable tag: 1.8
 
 Dark and colorful theme. 3 skins. Compatible with touch-screen mobile phones: iPhone & iPod Touch, Android, BlackBerry, Windows Phone, Palm Pre, Symbian. Widget-ready sidebar. Optional twitter and facebook icons.
 
@@ -33,7 +33,7 @@ For download and other instructions go to [http://www.mobilizetoday.com/wordpres
 
 == Changelog ==
 
-= 1.6 =
+= 1.8 =
 * Added support of WordPress 3 features
 * Translation ready. Languages: French, Swedish (Thanks to Tommy Sj&ouml;dahl)
 * Optimized background images size
