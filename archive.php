@@ -21,7 +21,7 @@ get_header(); ?>
 							
 								<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-								<span class="post-meta"><?php the_author(); ?> &nbsp; |  &nbsp; <?php comments_popup_link(__('No Comments &#187;', 'mobius'), __('1 Comment &#187;', 'mobius'), __('% Comments &#187;', 'mobius'), '', __('Comments Closed', 'mobius') ); ?></span>
+								<span class="post-meta"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'mobius' ), the_title_attribute( 'echo=0' ) ); ?>">#</a> &nbsp; |  &nbsp; <?php the_author(); ?> &nbsp; |  &nbsp; <?php comments_popup_link(__('No Comments &#187;', 'mobius'), __('1 Comment &#187;', 'mobius'), __('% Comments &#187;', 'mobius'), '', __('Comments Closed', 'mobius') ); ?></span>
 								<span class="date"><?php _e('Posted on', 'mobius');?><?php the_time(get_option('date_format')); ?></span>
 							</div>
 							

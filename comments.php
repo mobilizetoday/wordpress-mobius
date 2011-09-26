@@ -8,9 +8,6 @@ This file is part of the Mobius WordPress Theme.
 */
 ?>
 <?php
-	if (isset($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
-		die ('Please do not load this page directly. Thanks!');
-	
 	if ( post_password_required() ) { ?>
 		<p class="nocomments"><?php _e('This post is password protected. Enter the password to view comments','mobius') ?></p> 
 	<?php
@@ -21,6 +18,7 @@ This file is part of the Mobius WordPress Theme.
 <!-- You can start editing here. -->
 
 <?php if ( have_comments() ) : ?>
+	<hr/>
 	<h1><?php comments_number(__('No Responses','mobius'), __('One Response','mobius'), __('% Responses','mobius'));?> </h1>
 	<div class="alignleft"><?php previous_comments_link(); ?></div>
 	<div class="alignright"><?php next_comments_link(); ?></div>
@@ -41,9 +39,11 @@ This file is part of the Mobius WordPress Theme.
 		<!-- If comments are open, but there are no comments. -->
 
 	 <?php else : // comments are closed ?>
+		<?php if (!is_page()): ?>
 		<!-- If comments are closed. -->
+		<hr/>
 		<p class="nocomments"><?php _e('Comments are closed','mobius');?></p>
-
+		<?php endif; ?>
 	<?php endif; ?>
 <?php endif; ?>
 

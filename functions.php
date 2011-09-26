@@ -13,14 +13,18 @@ add_theme_support( 'automatic-feed-links' );
 $content_width = 670;
 
 // Register sidebar
-if ( function_exists('register_sidebar') ) {
+function mobius_widgets_init() {
 	register_sidebar(array(
+		'name' => 'Primary Sidebar',
+		'id' => 'sidebar',
 		'before_widget' => '<div id="%1$s" class="part widget %2$s"><div class="sm-slide-block inactive">',
 		'before_title' => '<div class="sm-title"><h4>',
 		'after_title' => '</h4><a href="javascript:;" class="sm-open-close">Close block</a></div><div class="sm-block"><div>',
-		'after_widget' => '</div></div></div><div class="clear"></div></div>',		
+		'after_widget' => '</div></div></div><div class="clear"></div></div>',
 	));
 }
+
+add_action ( 'widgets_init', 'mobius_widgets_init' );
 
 //Localization
 load_theme_textdomain('mobius', get_template_directory() . '/lang');

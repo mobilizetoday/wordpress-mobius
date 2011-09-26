@@ -30,8 +30,7 @@ get_header(); ?>
 							<p><?php edit_post_link(__('Edit this entry','mobius'),'',''); ?></p>
 							
                             <?php wp_link_pages(array('before' => __('<p><strong>Pages:</strong>' ,'mobius'), 'after' => '</p>', 'next_or_number' => 'number', 'pagelink' => 'page %')); ?>
-							
-							<hr/>
+
 							<?php comments_template(); ?> 
 							
 						</div>

@@ -44,9 +44,15 @@ function mobius_theme_options_add_page() {
 			'<li>' . __( '<strong>Mobile Layout</strong>: You can choose if you want your site&#8217;s mobile layout to manage sidebar visibility.', 'mobius' ) . '</li>' .
 		'</ol>' .
 		'<p>' . __( 'Remember to click "Save Changes" to save any changes you have made to the theme options.', 'mobius' ) . '</p>' .
+		'<p>If you like this theme and want it to be even better as well as to see new FREE mobile compatible themes from <a href="http://www.mobilizetoday.com/"  target="_blank" title="Make your existing website mobile with MobilizeToday!">MobilizeToday.com</a>, you are welcome to donate.</p>'.
+		'<div>
+			<input type="hidden" value="_s-xclick" name="cmd"/>
+			<input type="hidden" value="LPEQ5VUBRJSLA" name="hosted_button_id"/>
+			<input type="image" alt="PayPal - The safer, easier way to pay online!" name="submit" src="http://www.mobilizetoday.com/images/donate.gif"/>
+			<img height="1" width="1" src="https://www.paypal.com/en_US/i/scr/pixel.gif" alt=""/>
+		</div>'.
 		'<p><strong>' . __( 'For more information:', 'mobius' ) . '</strong></p>' .
-		'<p>' . __( '<a href="http://codex.wordpress.org/Appearance_Theme_Options_Screen" target="_blank">Documentation on Theme Options</a>', 'mobius' ) . '</p>' .
-		'<p>' . __( '<a href="http://www.mobilizetoday.com/" target="_blank">MobilizeToday.com</a>', 'mobus' ) . '</p>';
+		'<p>' . __( '<a href="http://codex.wordpress.org/Appearance_Theme_Options_Screen" target="_blank">Documentation on Theme Options</a>', 'mobius' ) . '</p>';
 
 	add_contextual_help( $theme_page, $help );
 }
@@ -115,25 +121,7 @@ function mobius_theme_options_render_page() {
 		<?php screen_icon(); ?>
 		<h2><?php printf( __( '%s Theme Options', 'mobius' ), get_current_theme() ); ?></h2>
 		<?php settings_errors(); ?>
-
-			<table width="100%" border="0" style="padding:5px 10px;">
-				<tr>
-					<td>
-						<p style="margin:0;padding: 0 0 18px 0; font-size: 14px;">If you like this theme and want it to be even better as well as to see new FREE mobile compatible themes from <a href="http://www.mobilizetoday.com/"  target="_blank" title="Make your existing website mobile with MobilizeToday!">MobilizeToday.com</a>, you are welcome to donate.</p>
-					</td>
-					<td style="vertical-align:top;">
-						<form method="post" action="https://www.paypal.com/cgi-bin/webscr">
-							<div>
-								<input type="hidden" value="_s-xclick" name="cmd"/>
-								<input type="hidden" value="LPEQ5VUBRJSLA" name="hosted_button_id"/>
-								<input type="image" alt="PayPal - The safer, easier way to pay online!" name="submit" src="http://www.mobilizetoday.com/images/donate.gif"/>
-								<img height="1" width="1" src="https://www.paypal.com/en_US/i/scr/pixel.gif" alt=""/>
-							</div>
-						</form>
-					</td>
-				</tr>
-			</table>
-
+		
 		<form method="post" action="options.php">
 			<?php
 				settings_fields( 'mobius_options' );

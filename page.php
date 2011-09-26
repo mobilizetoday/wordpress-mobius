@@ -26,8 +26,6 @@ get_header(); ?>
 							
 							<div class="clear"></div>
 
-							
-							<hr/>
 							<?php comments_template(); ?> 
 							
 						</div>
