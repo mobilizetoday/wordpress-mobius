@@ -8,9 +8,9 @@ This file is part of the Mobius WordPress Theme.
 */
 ?>
 
-<?php 	/* Widgetized sidebar, if you have the plugin installed. */
+<?php
 			
-			if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
+			if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar') ) : ?>
 
 			<div class="part pages">
 				<div class="sm-slide-block inactive">
