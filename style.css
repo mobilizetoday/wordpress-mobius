@@ -652,9 +652,8 @@ hr.lite {
 /* Pagination */
 
 #pagination {
-	width: 310px;
 	padding-top: 10px;
-	margin: 0 auto;
+	width: 100%;
 }
 #pagination ul {
 	list-style-type: none !important;

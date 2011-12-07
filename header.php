@@ -24,13 +24,14 @@ This file is part of the Mobius WordPress Theme.
     if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
 		wp_enqueue_script('jquery');
 ?>
+	
 	<script type="text/javascript">
 	// <![CDATA[
 	if (screen.width > 640 && window.location.search.substring(1) != "mobile" && !navigator.userAgent.match(/Android/i))
 	{
 		//desktop version
 		document.write('<link rel="stylesheet" href="<?php echo get_stylesheet_uri() ?>" type="text/css" media="screen,tv,projection" />');
-		document.write('<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/desktop-<?php echo $options['color_scheme']; ?>.css" type="text/css" title="skin" media="screen,tv,projection" />');
+		document.write('<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/desktop-<?php echo $options['color_scheme']; ?>.css" type="text/css" id="skin" media="screen,tv,projection" />');
 		document.write('<!--[if lte IE 7]><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/ie.css" type="text/css" media="screen" /><![endif]-->');
 
 	}
@@ -39,11 +40,11 @@ This file is part of the Mobius WordPress Theme.
 		//mobile version
 		document.write('<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />');
 		document.write('<link rel="stylesheet"  href="<?php echo get_stylesheet_directory_uri(); ?>/css/mobile.css" type="text/css" media="all" />');
-	 	document.write('<link rel="stylesheet"  href="<?php echo get_stylesheet_directory_uri(); ?>/css/mobile-<?php echo $options['color_scheme']; ?>.css" type="text/css" media="all" />');
+	 	document.write('<link rel="stylesheet"  href="<?php echo get_stylesheet_directory_uri(); ?>/css/mobile-<?php echo $options['color_scheme']; ?>.css" type="text/css" id="skin" media="all" />');
 		
 		<?php if ($options['mobile_layout'] == 'content') { ?>
 		document.write('<style type="text/css"> div.sl { display: none !important; }</style>');		
-		<?php } ?>		
+		<?php } ?>
 
 	 	var ua = navigator.userAgent.toLowerCase();
 	 	if ((ua.indexOf('iemobile') != -1) || (ua.indexOf('msie') != -1))
@@ -59,7 +60,7 @@ This file is part of the Mobius WordPress Theme.
 <?php wp_head(); ?>
         <script type="text/javascript">
 	// <![CDATA[
-	if (screen.width > 640 && window.location.search.substring(1) != "mobile")
+	if (screen.width > 640 && window.location.search.substring(1) != "mobile" && !navigator.userAgent.match(/Android/i))
 	{
 		//desktop version
 		document.write('<'+'script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.checkbox.min.js"><'+'/script>');
@@ -69,7 +70,6 @@ This file is part of the Mobius WordPress Theme.
 	else
 	{
 		//mobile version
-	 	document.write('<'+'script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.galleryScroll.1.5.2.js"><'+'/script>');
 	 	document.write('<'+'script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/mobile.js"><'+'/script>');
 	}
 	// ]]>

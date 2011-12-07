@@ -38,7 +38,7 @@ This file is part of the Mobius WordPress Theme.
 	</div>
 	<div id="footer">
 		<strong class="mobile-optimized" title="<?php _e('This page is optimized for mobile phones','mobius');?>"><?php _e('Optimized for mobile devices','mobius');?></strong>
-		<p><?php _e('Powered By', 'mobius'); ?><a href="http://wordpress.org" title="WordPress.org">WordPress</a></p>
+		<p><?php _e('Powered By', 'mobius'); ?> <a href="http://wordpress.org" title="WordPress.org">WordPress</a></p>
 		<p><em><?php _e('Design &amp; development by','mobius');?></em> <a id="mobilizetoday" href="http://www.mobilizetoday.com">MobilizeToday.com</a></p>
 	</div>
 <?php wp_footer(); ?>
