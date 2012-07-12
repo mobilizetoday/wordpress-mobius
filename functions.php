@@ -59,14 +59,14 @@ function mobius_comment($comment, $args, $depth) {
 
 // Custom search widget
 function mobius_search_form($form) {
-	$form = '<div class="sm-title"><h4>Search</h4><a href="javascript:void(null)" class="sm-open-close">Close block</a>					</div>
+	$form = '<div class="sm-title"><h4>Search</h4><a href="javascript:void(null)" class="sm-open-close">Close block</a></div>
 					<div class="sm-block">
 						<div><form method="get" action="' . home_url() . '/" >
 	<fieldset>
 	<input type="text" value="' . esc_attr(apply_filters('the_search_query', get_search_query())) . '" name="s" id="s" />
 	<input type="submit" class="submit" id="searchsubmit" value="'.esc_attr('Search').'" />
 	</fieldset>
-	</form>';
+	</form></div></div>';
 return $form;
 }
 add_filter('get_search_form', 'mobius_search_form');
